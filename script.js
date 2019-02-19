@@ -90,6 +90,8 @@ $(function(){
 	$('#border-radius').on('input',function(){
 		var borderRadius = $('#border-radius').val();
 		$('.btn').find('a').css('border-radius',borderRadius+'px');
+
+		$('.slider-value').html(borderRadius + 'px');
 	});
 	
 
