@@ -1,64 +1,5 @@
 $(function(){
-	
-
-	$('.dropdown').hide();
-	$('.row').on('click',function(){
-		var sState = $(this).data('state');
-		if (sState == 'close'){
-			//open
-			$(this).next().slideDown(function(){
-				$(this).prev()
-				.find('i')
-				.removeClass('fa fa-check')
-				.addClass('fa fa-minus')
-
-
-			});
-		//update
-		$(this).data('state','open')
-		}else{
-			//close
-			$(this).next().slideUp(function(){
-				$(this).prev()
-				.find('i')
-				.removeClass('fa fa-minus')
-				.addClass('fa fa-check')
-			});
-
-			$(this).data('state','close');
-
-		}
-	});
-
-	$('.dropdown [type=checkbox]').on('change',function(){
-
-		var unchecked = $(this).parent().parent().find('input:not(:checked)');
-
-		if(unchecked.length == 0){
-			console.log('all checked');
-			$(this).parent().parent().slideUp(function(){
-				$(this)
-				.find('i')
-				.removeClass('fa fa-minus')
-				.addClass('fa fa-check')
-
-				$(this).prev().addClass('step-complete');
-				$(this).prev()
-				.find('.step')
-
-
-			});
-
-
-
-
-
-		}else{
-			console.log('not ready');
-		}
-	});
-
-
+	// Move Arrows on Hover
 	$('.button5').on('mouseover',function(){
 		$(this).find('i').css('transform','translateX(10px)')
 	});
@@ -66,10 +7,7 @@ $(function(){
 		$(this).find('i').css('transform','translateX(0px)')
 	});
 
-	
-
-
-	
+	// Change Text Control
 	var buttonText = $('#buttonText').val();
 	$('#buttonText').on('input',function(){
 		var buttonText = $('#buttonText').val();

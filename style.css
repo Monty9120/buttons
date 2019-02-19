@@ -1,100 +1,10 @@
-h1 {
-  margin: 0; }
-
-.wrap {
-  border: 1px grey solid;
-  margin: auto;
-  font-family: arial; }
-
-.step-complete {
-  opacity: 0.5; }
-
-.step-list {
-  color: #eee;
-  background-color: #2980B9; }
-
-.progress-bar p {
-  background-color: #2980B9;
-  padding: 1em;
-  margin: 0;
-  color: white;
-  text-align: center;
-  border-bottom: thin white solid; }
-
-ul.dropdown {
-  list-style-type: none;
-  background-color: #006496;
-  margin: 0;
-  display: block; }
-  ul.dropdown img {
-    width: 2em;
-    height: 2em; }
-  ul.dropdown li {
-    width: 100%;
-    text-align: center;
-    display: flex; }
-    ul.dropdown li label {
-      flex: 0 0 60%;
-      color: #eee;
-      padding: 1em 0; }
-    ul.dropdown li [type="checkbox"] {
-      display: none; }
-    ul.dropdown li [type="checkbox"] + span {
-      flex: 0 0 3em;
-      font-size: 1.5em;
-      opacity: 0;
-      line-height: 50px; }
-    ul.dropdown li [type="checkbox"]:checked + span {
-      /*/display: flex;*/
-      opacity: 1; }
-      ul.dropdown li [type="checkbox"]:checked + span i {
-        background-color: #629a13;
-        color: white;
-        border-radius: 50px;
-        padding: 6px; }
-
-.row {
-  font-size: 12px;
-  display: flex;
-  padding: 1em;
-  justify-content: space-between;
-  text-transform: uppercase; }
-  .row h1 {
-    line-height: 57px; }
-  .row i {
-    color: #eee;
-    font-size: 20px;
-    line-height: 57px; }
-  .row .step {
-    background-color: rgba(50, 50, 50, 0.5);
-    border-radius: 50px;
-    padding: 1em;
-    text-align: center;
-    width: 1.1em;
-    color: white;
-    font-size: 1.5em; }
-
-.footer {
-  background-color: #629a13; }
-  .footer p {
-    color: white;
-    text-align: center;
-    margin: 0;
-    padding: 1em; }
-
-/*# sourceMappingURL=style.css.map */
-li label:hover{
-  cursor: pointer;
-}
-.row:hover{
-  cursor: pointer;
-}
-
 body{
   background-color: #eee;
   font-family: 'Roboto';
 }
-
+h2{
+  font-family: 'Comfortaa'
+}
 /* BUTTONS */
 .controls{
   display: flex;
@@ -104,7 +14,7 @@ body{
 }
 
 .controls select{
-  height: 40px;
+  height: 30px;
 }
 
 .input{
@@ -119,23 +29,30 @@ body{
   font-size: 1.5em;
 }
 #buttonText{
-  font-size: 2em;
+  font-size: 20px;
   width: 80%;
   margin: auto;
   text-align: center;
   transition: all ease 0.3s;
 }
 
+#buttonText:hover{
+  border:2px green solid; 
+}
+
 #buttonText:focus{
-  border:2px green solid;
+  border:2px green solid; 
   padding: 0.3em;
+  background-color:cornsilk;
+  border-radius: 10px;
+  outline: none;
 }
 
 .button-wrap{
   display: flex;
   margin: auto;
   flex-wrap: wrap;
-  width: 90%;
+  width: 95%;
   justify-content: center;
 }
 .btn{
@@ -148,13 +65,11 @@ body{
   flex: 0 0 20%;
   background-color: mintcream;
   box-shadow: 2px 9px 5px 0px #ccc;
-  font-weight: 100;
-
 }
 .btn a{
   text-decoration: none;
 }
-.button a{
+.button{
   background-color: cadetblue;
   color: white;
   padding: 1em;
@@ -163,11 +78,11 @@ body{
 
 }
 
-.button a:hover{
+.button:hover{
   background-color:lightgreen;
 }
 
-.button2 a{
+.button2{
   padding: 2em 3em;
   background:linear-gradient(90deg,  purple, magenta, hotpink ,transparent, 50%, transparent 100%);
   border-radius: 5px;
@@ -180,7 +95,7 @@ body{
 
 }
 
-.button2 a:hover{
+.button2:hover{
   background-position: left bottom;
   border-color: transparent;
   color: white;
@@ -204,10 +119,6 @@ body{
   
   }
   
-  .button3:hover {
-	color:red;
-  }
-  
   .button3::after {
 	position: absolute;
 	content: '';
@@ -215,7 +126,7 @@ body{
 	left: 0;
 	width: 0;
 	height: 100%;
-	background-color: lightgreen;
+	background-color: #FFD100;
 	transform-origin:left;
 	transition:width 0.25s ease;
   z-index:-1;
@@ -238,7 +149,7 @@ body{
 
   .button4:hover{
     box-shadow: 2px 9px 5px 0px #666;
-    transform: translateY(-5px);
+    transform: translateY(-3px);
     opacity: 0.8;
   }
 
@@ -287,3 +198,16 @@ body{
     transition: all ease 0.1s;
   }
 
+  @media only screen and (max-width: 600px) {
+    
+    .input{
+      flex: 1 0 90%;
+    }
+    
+    .button-wrap{
+      width: 100%;
+    }
+    .btn{
+      flex: 1;
+    }
+  }
