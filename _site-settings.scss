@@ -1,0 +1,65 @@
+@charset "UTF-8";
+
+// ----------------------
+// == Site settings
+// ----------------------
+
+// Fonts
+$font1: "Helvetica Neue", Helvetica, Arial, sans-serif;
+$font2: Georgia, serif;
+$headfont:'Montserrat', sans-serif;
+
+//Ripples Cafe Project
+$mainfont: 'chewy';
+$typeface: 'Open Sans';
+$rippleblue:#2980B9;
+$ripplelightblue:#3498DB;
+$rippleyellow:#FFD34E;
+
+// Colors
+$lighttext: #eee;
+$darktext: #333333;
+$red: #df2e30;
+$forest:#33663F;
+$sand: #FFFF99;
+$banana:#FEF135;
+$lightblue: #9DD1FE;
+$grey:#cccc;
+$nicegreen:#629a13;
+$businessblue:rgba(0,100,150,1);
+
+
+
+
+//Colors in use
+$color1: $rippleblue;
+$color2: $ripplelightblue;
+$color3: $rippleyellow;
+
+// -----------------------------
+
+// Graphic chart
+
+
+
+$hoverbg: rgba(0,0,0,0.4);
+
+$roundborderbottom: 0 0 8px 8px;
+
+$bordershape1: 5px 20px;
+
+
+$boxshadow: 0px 0px 10px -2px rgba(0,0,0,0.8);
+$boxshadowInset: inset 0px 0px 20px 7px rgba(0,0,0,0.16);
+
+
+
+// = Grid
+// -----------------------------
+
+// Max width wrapper
+$wrap-width: 120em;
+
+
+// Break Points
+$bp1:40em
