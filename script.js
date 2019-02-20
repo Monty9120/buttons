@@ -31,6 +31,13 @@ $(function(){
 
 		$('.slider-value').html(borderRadius + 'px');
 	});
+
+	//View Source
+	var sourceCode = $('.source')
+	sourceCode.slideUp();
+	$('.viewsource').on('click',function(){
+		sourceCode.slideToggle();
+	});
 	
 
 });

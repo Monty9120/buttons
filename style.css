@@ -16,21 +16,35 @@ h2{
 .controls select{
   height: 30px;
 }
+pre{
+  text-align: left;
+  background-color: #eee;
+  padding: 5px;
+  display: none;
+  max-width: 350px;
+  max-height: 300px;
+  margin:auto;
+}
 
 .input{
   text-align: center;
   display: flex;
   flex-direction: column;
-  flex: 1 0 30%;
+  flex: 0 0 30%;
   margin: 1em;
+  padding: 1em;
+  box-shadow: 2px 9px 5px 0px #ccc;
+  background-color: aliceblue;
 }
 .input label{
   color: black;
   font-size: 1.5em;
+  font-family: 'Comfortaa';
+  font-weight: bold;
 }
 #buttonText{
   font-size: 20px;
-  width: 80%;
+  width: 50%;
   margin: auto;
   text-align: center;
   transition: all ease 0.3s;
@@ -56,7 +70,7 @@ h2{
   justify-content: center;
 }
 .btn{
-  padding: 4em;
+  padding: 3em;
   text-align: center;
   display: flex;
   justify-content: center;
@@ -69,6 +83,21 @@ h2{
 .btn a{
   text-decoration: none;
 }
+
+.viewsource{
+  background-color: transparent;
+  border: 1px black solid;
+  border-radius: 10px;
+  margin-top: 2em;
+  width: 50%;
+  margin:auto;
+  margin-top: 2em;
+  cursor: pointer;
+}
+.viewsource:hover{
+  border-color: green;
+}
+
 .button{
   background-color: cadetblue;
   color: white;
