@@ -1,6 +1,9 @@
 body{
   background-color: #eee;
   font-family: 'Roboto';
+  /* animation: colorChanger 20s infinite; */
+  background: linear-gradient(225deg, #ffabab, #ffdaab, #8c967c, #abe4ff, #b5a7c0);
+  background-size: 300% 300%;
 }
 h2{
   font-family: 'Comfortaa'
@@ -56,8 +59,6 @@ pre{
 
 #buttonText:focus{
   border:2px green solid; 
-  padding: 0.3em;
-  background-color:cornsilk;
   border-radius: 10px;
   outline: none;
 }
@@ -78,12 +79,16 @@ pre{
   margin: 1em;
   flex: 0 0 20%;
   background-color: mintcream;
-  box-shadow: 2px 9px 5px 0px #ccc;
+  transition: box-shadow ease 0.4s;
+ 
+
 }
 .btn a{
   text-decoration: none;
 }
-
+.btn:hover{
+  box-shadow: 0px 9px 5px 2px #ccc;
+}
 .viewsource{
   background-color: transparent;
   border: 1px black solid;
@@ -120,7 +125,8 @@ pre{
   transition: all ease-out 0.7s;
   border: 1px black solid;
   text-decoration: none;
-  color: black;
+  color: white;
+  background-color: #222222;
 
 }
 
@@ -210,7 +216,7 @@ pre{
     cursor: pointer;
     transition: all ease 0.4s;
     background-color: lightskyblue;
-    color: darkslategray;
+    color: black;
     padding: 1em;
     border-radius: 10px;
   }
@@ -227,6 +233,56 @@ pre{
     transition: all ease 0.1s;
   }
 
+  .button7{
+    box-shadow: inset -30px -5px 180px 0px rgba(235,235,235,0.91);
+    background-color: #202bc5;
+    color: white;
+    cursor: pointer;
+    transition: all ease 1s;
+    padding: 1em;
+  
+  }
+  .button7:hover{
+    box-shadow: inset 30px -5px 180px 0px rgba(0,0,0,0.91);
+    background-color: blue;
+    animation-duration: 1s;
+    animation-delay: 0s;
+    animation: bounce;
+
+  }
+
+
+  @-webkit-keyframes colorChanger {
+    from {
+        background-color: mintcream;
+        animation-duration: 1s;
+    }
+    20% {
+        background-color: teal;
+        animation-duration: 1s;
+    }
+    40% {
+        background-color: ligthblue;
+        animation-duration: 1s;
+    }
+    60% {
+        background-color: tomato;
+        animation-duration: 1s;
+    }
+    80% {
+        background-color: wheat;
+        animation-duration: 1s;
+    }
+    to {
+        background-color: beige;
+        animation-duration: 1s;
+    }
+}
+
+
+
+
+
   @media only screen and (max-width: 600px) {
     
     .input{
@@ -235,8 +291,10 @@ pre{
     
     .button-wrap{
       width: 100%;
+      flex-wrap: wrap;
     }
     .btn{
       flex: 1;
+      min-width: 200px;
     }
   }
