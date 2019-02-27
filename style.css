@@ -36,7 +36,7 @@ pre{
   flex: 0 0 30%;
   margin: 1em;
   padding: 1em;
-  box-shadow: 2px 9px 5px 0px #ccc;
+  box-shadow: 2px 4px 5px 0px #666;
   background-color: aliceblue;
 }
 .input label{
@@ -87,7 +87,7 @@ pre{
   text-decoration: none;
 }
 .btn:hover{
-  box-shadow: 0px 9px 5px 2px #ccc;
+  box-shadow: 0px 5px 5px 2px #666;
 }
 .viewsource{
   background-color: transparent;
@@ -252,7 +252,7 @@ pre{
   }
 
 
-  @-webkit-keyframes colorChanger {
+  @keyframes colorChanger {
     from {
         background-color: mintcream;
         animation-duration: 1s;
