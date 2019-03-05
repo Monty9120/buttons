@@ -40,6 +40,12 @@ $(function(){
 	});
 
 
+	// Bounce Out Button
+	$('.button7').on('click',function(){
+		$(this).addClass('bounceOut')
+	});
+
+
 	
 
 });
